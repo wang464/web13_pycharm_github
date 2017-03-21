@@ -25,3 +25,4 @@ command=/usr/local/bin/gunicorn wsgi --bind 0.0.0.0:2000 --pid /tmp/todo.pid
 directory=/root/web13
 autostart=true
 """
+'''验证这个是不是版本库上面的内容是否会跟着做出修改,为什么vim那个目录没有上传?'''
