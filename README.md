@@ -18,4 +18,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-enabled/web13_pycharm_github.nginx
 
 启动
-service supervisor restart
+service supervisor restart\
+
+重启nginx
+nginx -c /etc/nginx/sites-enabled/web13_pycharm_github.nginx
