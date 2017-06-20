@@ -9,6 +9,7 @@ from routes.todo import main as todo_routes
 from routes.uiyj import main as uiyj_routes
 from routes.tianmao import main as tianmao_routes
 from routes.huaban import main as huaban_routes
+from routes.fei import main as fei_routes
 
 
 app = Flask(__name__)
@@ -28,6 +29,8 @@ app.register_blueprint(todo_routes, url_prefix='/todo')
 app.register_blueprint(uiyj_routes)
 app.register_blueprint(tianmao_routes, url_prefix='/tianmao')
 app.register_blueprint(huaban_routes, url_prefix='/huaban')
+app.register_blueprint(fei_routes, url_prefix='/fei')
+
 
 
 # 运行代码
