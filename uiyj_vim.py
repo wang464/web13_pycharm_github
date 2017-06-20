@@ -1,17 +1,34 @@
-# 这个文档是用来试验的所以里面的内容什么都没有
-# 没有内容就是这个文件的常态
+'''
+# web13-3_pycharm_1
+## 设置软连接
+### supervisor的配置和软连接
+ln -s /root/web13_pycharm_github/web13_pycharm_github.conf /etc/supervisor/conf.d/web13_pycharm_github.conf
+### 查看连接状态
+ll /etc/supervisor/conf.d/web13_pycharm_github.conf
+### Nginx软连接
+ln -s /root/web13_pycharm_github/web13_pycharm_github.nginx /etc/nginx/sites-enabled/web13_pycharm_github.nginx
+删除默认配置 rm /etc/nginx/sites-enabled/chat
+### 查看软连接的内容和状态
+内容:
+cat /etc/nginx/sites-enabled/web13_pycharm_github.nginx
+状态:
+ll /etc/nginx/sites-enabled/web13_pycharm_github.nginx
+删除默认:
+rm /etc/nginx/sites-enabled/default
+删除自己创建的
+rm /etc/nginx/sites-enabled/web13_pycharm_github.nginx
 
-print('uiyj')
-uiyjj = '''
-我到底想要做什么呢?我不知道我要做什么,我的文字无法表达我的内心,我该怎么修改代码呢?怎么加载异步数据呢?
-异步数据是怎么处理的?使用的JavaScript发送数据,之后自己再进行处理.
-发送的是get请求的内容.
-那么我应该怎么做呢?调用ajax的js代码.之后的内容就是在flask里面增加这个功能,什么功能呢?
-在flask里面增加返回JSON格式数据的处理请求函数就可以实现这个功能
+启动
+service supervisor restart
+
+重启nginx
+nginx -s reload
+
+#### 6-20更新
+增加了一个网页/fei. 一个小人可以跟着鼠标来回移动.
+
+增加了一个bootstrap做的主页
+这个里面的内容是用来记录变化的. 之前的内容有点问题. 现在首先要做好的事情是做出一个主页. 适配多端.
+之后的内容就是找一个音乐播放器. 之后的内容呢? 暂时就这么多吧. .
 
 '''
-
-print(uiyjj)
-
-'''这个是我的试验内容2,我正在学习使用git提交数据和修改原来这个还是可以进行版本回退的,简直不要太爽'''
-'''我进行了一次版本回退,哈哈,太好玩了,我要进行第二次提交和后退'''

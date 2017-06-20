@@ -6,7 +6,7 @@ from flask import redirect
 from flask import url_for
 from flask import Blueprint
 from routes.todo import main as todo_routes
-from routes.uiyj import main as uiyj_routes
+from routes.index import main as index_routes
 from routes.tianmao import main as tianmao_routes
 from routes.huaban import main as huaban_routes
 from routes.fei import main as fei_routes
@@ -26,7 +26,7 @@ app.secret_key = 'random string'
 # 注册蓝图
 # 有一个 url_prefix 可以用来给蓝图中的每个路由加一个前缀
 app.register_blueprint(todo_routes, url_prefix='/todo')
-app.register_blueprint(uiyj_routes)
+app.register_blueprint(index_routes)
 app.register_blueprint(tianmao_routes, url_prefix='/tianmao')
 app.register_blueprint(huaban_routes, url_prefix='/huaban')
 app.register_blueprint(fei_routes, url_prefix='/fei')

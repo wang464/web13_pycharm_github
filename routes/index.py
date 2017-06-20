@@ -8,8 +8,8 @@ from flask import (
     Blueprint,
 )
 
-main = Blueprint('uiyj', __name__)
+main = Blueprint('index', __name__)
 
 @main.route('/')
 def index():
-	return  render_template('uiyj.html')
+	return  render_template('index.html')

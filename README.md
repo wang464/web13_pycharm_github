@@ -18,10 +18,12 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-enabled/web13_pycharm_github.nginx
 
 启动
-service supervisor restart\
+service supervisor restart
 
 重启nginx
 nginx -s reload
 
 #### 6-20更新
 增加了一个网页/fei. 一个小人可以跟着鼠标来回移动.
+
+增加了一个bootstrap做的主页.
