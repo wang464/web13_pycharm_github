@@ -62,7 +62,7 @@ a[href^="tel:"] {
 header {
   /*padding: 30px 0 29px;*/
   z-index: 50;
-  background: #F25C27 /*url(../img/header-bg.png) repeat*/;
+  background: #F25C27 /*url(../static/img/header-bg.png) repeat*/;
 }
 /* navbar */
 .navbar_ {
